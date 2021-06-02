@@ -38,47 +38,80 @@
     z-index: -100
     width: 100%
     min-height: 1145px
-    background-color: #E5E5E5
-  &-wrapper
-
+    background-color: #EDEFF0
+  &__image
+    width: 100%
+    max-height: 275px
+    object-fit: cover
+  &__title
+    font-family: 'Roboto Slab', serif
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    color: $dark
+    background-color: #fff
+    margin-bottom: 5px
+    &--big
+      padding: 15px 55px 30px 25px
+  &__text
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $dark
+    margin-bottom: 10px
+  &__date
+    position: absolute
+    bottom: 30px
+    left: 25px
+    font-family: 'Lato', sans-serif
+    color: #939699
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
   &__hot
     margin-bottom: 30px
   &__grid
     display: grid
     grid-gap: 30px
+    grid-template-columns: repeat(4, 1fr )
+    grid-template-rows: repeat(4, 1fr)
     width: 100%
-    // min-height: 770px
   &__item
-    border: 1px solid red
     border-radius: 10px
+    overflow: hidden
+    background-color: #fff
     &:nth-child(1)
       grid-column: 1 / 3
       grid-row-start: 1
       grid-row-end: 3
-
     &:nth-child(2)
       grid-column-start: 3
       grid-column-end: 4
       grid-row-start: 1
       grid-row-end: 3
-
     &:nth-child(3)
       grid-column-start: 4
       grid-column-end: 5
       grid-row-start: 1
       grid-row-end: 2
-
     &:nth-child(4)
       grid-column-start: 4
       grid-column-end: 5
       grid-row-start: 2
       grid-row-end: 4
-
     &:nth-child(5)
       grid-column-start: 1
       grid-column-end: 2
       grid-row-start: 3
       grid-row-end: 5
+      display: flex
+      flex-direction: column
+    &:nth-child(n+6):nth-child(-n+9)
+      padding: 25px 25px 30px
+      position: relative
 .dream
   padding-top: 35px
   padding-bottom: 13px
@@ -99,6 +132,7 @@
     line-height: 15px
     color: #6e99ae
     margin-bottom: 20px
+    text-transform: uppercase
   &__title
     font-family: 'Roboto Slab', serif
     font-style: normal
@@ -113,6 +147,8 @@
     font-size: 14px
     line-height: 20px
     color: $light-dark
+  &__image
+    margin-top: -20px
   &__bottom
     display: flex
     align-items: center
@@ -124,7 +160,7 @@
     width: 30px
     margin-right: 10px
   &__username
-    font-weight: 900
+    font-weight: 700
     font-size: 14px
     line-height: 20px
     color: $dark
@@ -151,12 +187,11 @@
   font-family: 'Lato', sans-serif
   color: #FFFFFF
   padding: 19px 25px 25px 24px
-  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/articles/popular-bg.png') center no-repeat
+  background: url('../img/articles/popular-bg.png') no-repeat center
   background-size: cover
   max-width: 263px
   display: flex
   flex-direction: column
-  justify-content: space-between
   align-items: flex-start
   &__label
     font-size: 12px
@@ -164,7 +199,7 @@
     border-radius: 3px
     padding: 5px 12px
     background-color: #3DC47E
-    margin-bottom: 121px
+    margin-bottom: 115px
     text-align-last: left
   &__title
     font-family: Lato
@@ -219,18 +254,15 @@
     height: 13.5px
     margin-right: 5.75px
 .download
-  background-color: #3BBDC4
-  z-index: -10
   position: relative
-  &::before
-    content: ''
+  background-color: #3BBDC4
+  &__image
     position: absolute
     top: 24px
     right: 22px
-    z-index: -1
-    width: 56px
-    height: 72px
-    background-image: url('../img/articles/download-bg.svg')
+    z-index: 10
+    width: 72px
+
   &__info
     padding: 25px 25px 19px
   &__title
@@ -248,8 +280,7 @@
     margin-bottom: 19px
   &__button
     width: 100%
-    background-color: transparent
-    border: none
+    text-decoration: none
     display: flex
     align-items: center
     justify-content: center
@@ -261,3 +292,47 @@
     color: #FFFFFF
   &__icon
     margin-right: 11px
+.tags
+  font-family: 'Lato', sans-serif
+  color: $dark
+  background-color: #fff
+  &__title
+    padding: 20px 25px
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    border-bottom: 1px solid #D9DADB
+  &-wrapper
+    padding: 25px 10px 15px 26px
+  &__item
+    display: inline-block
+    text-decoration: none
+    border: 1px solid #D9DADB
+    border-radius: 5px
+    padding: 4px 10px 4px 14px
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: inherit
+    margin-right: 10px
+    margin-bottom: 15px
+.social
+  padding-top: 30px
+  padding-bottom: 40px
+  &__title
+    font-family: 'Roboto Slab', serif
+    text-align: center
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    margin: 0 auto 25px
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+  &__link
+    text-decoration: none
+    &:not(:last-child)
+      margin-right: 20px

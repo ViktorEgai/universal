@@ -19,16 +19,16 @@
           <a href="index.html" class="header__logo logo">
             <img class="logo__image" src="img/logo.svg" alt="logo" />
           </a>
-          <nav class="header-navbar header-navbar--mobile">
+          <nav class="header-navbar header-navbar--mobile" id="navbar">
             <ul class="header-navbar__list header-navbar__list--mobile">
               <li class="header-navbar__item header-navbar__item--mobile">
-                <a href="" class="header-navbar__link header-navbar__link--mobile">Статьи</a>
+                <a href="#articles" class="header-navbar__link header-navbar__link--mobile">Статьи</a>
               </li>
               <li class="header-navbar__item header-navbar__item--mobile">
                 <a href="" class="header-navbar__link header-navbar__link--mobile">Новости</a>
               </li>
               <li class="header-navbar__item header-navbar__item--mobile">
-                <a href="" class="header-navbar__link header-navbar__link--mobile">Горячее</a>
+                <a href="#hot" class="header-navbar__link header-navbar__link--mobile">Горячее</a>
               </li>
               <li class="header-navbar__item header-navbar__item--mobile">
                 <a href="" class="header-navbar__link header-navbar__link--mobile">HTML</a>
@@ -105,7 +105,7 @@
                 </div>
                 <!-- /.user__bio -->
               </a>
-              <div class="content__descpription">
+              <div class="content__description">
                 <h2 class="content__title">css</h2>
                 <h3 class="content__subtitle">
                   Как использовать CSS float <br />
@@ -116,7 +116,7 @@
                   <img src="img/icons/Arrow.svg" alt="icon:arrow" />
                 </a>
               </div>
-              <!-- /.content__descpription -->
+              <!-- /.content__description -->
             </div>
             <!-- /.content__item -->
             <div id="content-2" class="content__item">
@@ -129,7 +129,7 @@
                 </div>
                 <!-- /.user__bio -->
               </a>
-              <div class="content__descpription">
+              <div class="content__description">
                 <h2 class="content__title">javascript</h2>
                 <h3 class="content__subtitle">
                   Расширение Chrome <br />
@@ -140,7 +140,7 @@
                   <img src="img/icons/Arrow.svg" alt="icon:arrow" />
                 </a>
               </div>
-              <!-- /.content__descpription -->
+              <!-- /.content__description -->
             </div>
             <!-- /.content__item -->
             <div id="content-3" class="content__item">
@@ -153,7 +153,7 @@
                 </div>
                 <!-- /.user__bio -->
               </a>
-              <div class="content__descpription">
+              <div class="content__description">
                 <h2 class="content__title">html</h2>
                 <h3 class="content__subtitle">
                   Правильно вставляем картинку <br />
@@ -164,7 +164,7 @@
                   <img src="img/icons/Arrow.svg" alt="icon:arrow" />
                 </a>
               </div>
-              <!-- /.content__descpription -->
+              <!-- /.content__description -->
             </div>
             <!-- /.content__item -->
             <div id="content-4" class="content__item">
@@ -177,7 +177,7 @@
                 </div>
                 <!-- /.user__bio -->
               </a>
-              <div class="content__descpription">
+              <div class="content__description">
                 <h2 class="content__title">web design</h2>
                 <h3 class="content__subtitle">ТОП-10 плагинов <br />для Figma</h3>
                 <a href="#" class="content__link">
@@ -185,7 +185,7 @@
                   <img src="img/icons/Arrow.svg" alt="icon:arrow" />
                 </a>
               </div>
-              <!-- /.content__descpription -->
+              <!-- /.content__description -->
             </div>
             <!-- /.content__item -->
             <div id="content-5" class="content__item">
@@ -198,7 +198,7 @@
                 </div>
                 <!-- /.user__bio -->
               </a>
-              <div class="content__descpription">
+              <div class="content__description">
                 <h2 class="content__title">CSS</h2>
                 <h3 class="content__subtitle">Возможности CSS Grid Layout, которые уже можно применять</h3>
                 <a href="#" class="content__link">
@@ -206,7 +206,7 @@
                   <img src="img/icons/Arrow.svg" alt="icon:arrow" />
                 </a>
               </div>
-              <!-- /.content__descpription -->
+              <!-- /.content__description -->
             </div>
             <!-- /.content__item -->
           </div>
@@ -220,7 +220,7 @@
     <section class="articles">
       <div class="container">
         <div class="articles-wrapper">
-          <div class="articles__hot hot">
+          <div id="hot" class="articles__hot hot">
             <a href="#" class="hot__link">
               <span class="hot__text">25 способов настроить&nbsp;слайдер </span>
               <img src="img/articles/hot-1.png" alt="hot-1" class="hot__image" />
@@ -239,13 +239,13 @@
             </a>
           </div>
           <!-- /.articles__hot -->
-          <div class="articles__grid">
+          <div id="articles" class="articles__grid">
             <div class="articles__item dream">
               <div class="dream__top">
                 <div class="dream__info">
                   <span class="dream__text">статьи</span>
                   <h1 class="dream__title">Вам предложили работу мечты, но вы не можете...</h1>
-                  <p class="dream__descpription">
+                  <p class="dream__description">
                     Как поступить, если хочется пойти на работу мечты, но она находится в другом городе. У вас семья и переезжать вы не готовы.
                   </p>
                 </div>
@@ -287,27 +287,79 @@
               <div class="download__info">
                 <h2 class="download__title">Чек-лист сдачи верстки вашему заказчику</h2>
                 <span class="download__description"> PDF, 125 Мб </span>
+                <img src="img/articles/Download.png" alt="" class="download__image" />
               </div>
-              <button class="download__button">
+              <a href="music/queen-we_will_rock_you.mp3" download="" class="download__button">
                 <img src="img/icons/Download.svg" alt="icon:download" class="download__icon" />
                 Скачать
-              </button>
+              </a>
               <!-- /.dowload__info -->
             </div>
             <!-- /.articles__item -->
-            <div class="articles__item">4</div>
+            <div class="articles__item tags">
+              <h2 class="tags__title">теги</h2>
+              <div class="tags-wrapper">
+                <a href="#" class="tags__item">Forest</a>
+                <a href="#" class="tags__item">Hover tag</a>
+                <a href="#" class="tags__item">Nature</a>
+                <a href="#" class="tags__item">Recreation</a>
+                <a href="#" class="tags__item">Tent</a>
+                <a href="#" class="tags__item">Fresh air</a>
+                <a href="#" class="tags__item">Summer</a>
+                <a href="#" class="tags__item">Mountains</a>
+                <a href="#" class="tags__item">Wood</a>
+                <a href="#" class="tags__item">Map</a>
+                <a href="#" class="tags__item">Sun</a>
+                <a href="#" class="tags__item">Wild animals</a>
+                <a href="#" class="tags__item">Night</a>
+              </div>
+              <!-- /.tags-wrapper -->
+            </div>
             <!-- /.articles__item -->
-            <div class="articles__item">5</div>
+            <div class="articles__item">
+              <img src="img/articles/article.png" alt="article" class="articles__image" />
+              <h2 class="articles__title articles__title--big">20+ инструментов для js-разработчика</h2>
+            </div>
             <!-- /.articles__item -->
-            <div class="articles__item">6</div>
+            <div class="articles__item">
+              <h2 class="articles__title">Удачные референсы</h2>
+              <p class="articles__text">Как выбрать подходящие исходники, если вы ищите идею для интерфейса</p>
+              <span class="articles__date"> 15 октября</span>
+            </div>
             <!-- /.articles__item -->
-            <div class="articles__item">7</div>
+            <div class="articles__item">
+              <h2 class="articles__title">Заказчики — мудаки?</h2>
+              <p class="articles__text">Как защититься от бесконечных правок на этапе сдачи проекта</p>
+              <span class="articles__date"> 20 октября</span>
+            </div>
             <!-- /.articles__item -->
-            <div class="articles__item">8</div>
+            <div class="articles__item">
+              <h2 class="articles__title">Работа без стресса — это...</h2>
+              <p class="articles__text">Обустройте свое рабочее место так, чтобы не испытывать раздражение от скрипучего...</p>
+              <span class="articles__date"> 26 октября</span>
+            </div>
             <!-- /.articles__item -->
-            <div class="articles__item">9</div>
+            <div class="articles__item">
+              <h2 class="articles__title">Бесплатные методы...</h2>
+              <p class="articles__text">Как не платить за софт, если у вас есть студенческий билет высшего учебного заведения</p>
+              <span class="articles__date"> 13 октября</span>
+            </div>
             <!-- /.articles__item -->
-            <div class="articles__item">10</div>
+            <div class="articles__item social">
+              <h2 class="social__title">Наши соцсети</h2>
+              <div class="social-wrapper">
+                <a target="_blank" href="https://www.facebook.com/" class="social__link">
+                  <img src="img/icons/fb.svg" alt="icon:facebook" class="social__icon" />
+                </a>
+                <a target="_blank" href="https://twitter.com/" class="social__link">
+                  <img src="img/icons/twitter.svg" alt="icon:twitter" class="social__icon" />
+                </a>
+                <a target="_blank" href="https://www.youtube.com/" class="social__link">
+                  <img src="img/icons/yt.svg" alt="icon:youtube" class="social__icon" />
+                </a>
+              </div>
+              <!-- /.social-wrapper -->
+            </div>
             <!-- /.articles__item -->
           </div>
           <!-- /.articles__grid -->
