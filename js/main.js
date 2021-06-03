@@ -25,4 +25,23 @@ $(document).ready(function () {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 200);
     });
+    
+   // кнопка изюранного
+  var bookMark = $(".news-item__bookmark");
+  bookMark.on("click", function () {    
+    $(this).toggleClass("news-item__bookmark--active");
+  });
+
 });
+ // многоточие 
+document.addEventListener( "DOMContentLoaded", () => {
+   const wrappers = document.querySelectorAll(['p', 'span', 'h2']); 
+   wrappers.forEach(item => { 
+      let options = {
+      ellipsis: "\u2026 ",
+      truncate: "word",
+   };    
+    new Dotdotdot( item, options );
+    });
+});
+

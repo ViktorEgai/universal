@@ -13,6 +13,18 @@
     border-right: 1px solid #4B5157
     text-decoration: none
     color: #fff
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 1
+      background-color: grey
+      width: 100%
+      height: 100%
+      opacity: 0
+      transition: 0.3s
     &:not(:last-child)
       padding-right: 25px
     &:not(:first-child)
@@ -35,13 +47,14 @@
     width: 100%
     max-height: 275px
     object-fit: cover
+    position: relative
+    z-index: -3
   &__title
     font-family: 'Roboto Slab', serif
     font-weight: bold
     font-size: 16px
     line-height: 25px
     color: $dark
-    background-color: #fff
     margin-bottom: 5px
     &--big
       padding: 15px 55px 30px 25px
@@ -53,6 +66,8 @@
     line-height: 20px
     color: $dark
     margin-bottom: 10px
+    max-height: 60px
+    // overflow: hidden
   &__date
     position: absolute
     bottom: 30px
@@ -75,6 +90,21 @@
     border-radius: 10px
     overflow: hidden
     background-color: #fff
+    position: relative
+    z-index: 2
+    &--link
+      text-decoration: none
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -2
+        background-color: $dark
+        width: 100%
+        height: 100%
+        opacity: 0
+        transition: 0.3s
     &:nth-child(1)
       grid-column: 1 / 3
       grid-row-start: 1
@@ -145,6 +175,8 @@
     color: $light-dark
   &__image
     margin-top: -20px
+    position: relative
+    z-index: -3
   &__bottom
     position: relative
     display: flex
@@ -257,7 +289,6 @@
   align-items: center
   justify-content: space-between
   position: relative
-
   background-color: #3BBDC4
   &__image
     position: absolute
@@ -265,7 +296,6 @@
     right: 22px
     z-index: 10
     width: 72px
-
   &__info
     padding: 25px 25px 19px
   &__title
@@ -293,6 +323,18 @@
     font-size: 14px
     line-height: 20px
     color: #FFFFFF
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      z-index: -2
+      width: 100%
+      height: 100%
+      background-color: #1d5253
+      opacity: 0
+      transition: 0.3s
   &__icon
     margin-right: 11px
 .tags
@@ -321,6 +363,19 @@
     color: inherit
     margin-right: 10px
     margin-bottom: 15px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      z-index: -3
+      background-color: $dark
+      width: 100%
+      height: 100%
+      opacity: 0
+      transition: 0.3s
+
 .social
   padding-top: 30px
   padding-bottom: 40px
@@ -341,5 +396,22 @@
     justify-content: center
   &__link
     text-decoration: none
+    position: relative
+    width: 50px
+    height: 50px
+    z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 2
+      background-color: $dark
+      width: 100%
+      height: 100%
+      opacity: 0
+      transition: 0.3s
+      border-radius: 50%
     &:not(:last-child)
       margin-right: 20px
+  &__icon

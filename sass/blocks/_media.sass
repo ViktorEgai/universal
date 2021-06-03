@@ -1,6 +1,7 @@
 @media  ( max-width: 1200px )
   .container
     max-width: 978px
+    width: 95%
   .header
     &-navbar
       &__item
@@ -94,6 +95,7 @@
 @media ( max-width: 768px )
   .container
     max-width: 576px
+
   .header
     position: relative
     &-navbar
@@ -386,3 +388,47 @@
   .download
     &__title
       max-width: 70%
+@media ( min-width: 768px )
+  .header
+    &-navbar
+      &__link
+        &:hover
+          text-decoration: underline
+    &__button
+      &:hover
+        background-color: #acb0b4
+  .main
+    &-tabs
+      &__item
+        &:hover
+          background-color: #F5F5F5
+  .button
+    &:hover
+      background-color: #3863db
+      opacity: 0.9
+  .hot
+    &__link
+      &:hover
+        &::before
+          opacity: 0.5
+  .articles
+    &__item
+      &--link
+        &:hover
+          &::before
+            opacity: 0.5
+  .download
+    &__button
+      &:hover
+        &::before
+          opacity: 0.8
+  .tags
+    &__item
+      &:hover
+        &::before
+          opacity: 0.5
+  .social
+    &__link
+      &:hover
+        &::before
+          opacity: 0.5
