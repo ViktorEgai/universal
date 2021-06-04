@@ -35,7 +35,7 @@ $(document).ready(function () {
 });
  // многоточие 
 document.addEventListener( "DOMContentLoaded", () => {
-   const wrappers = document.querySelectorAll(['p', 'span']); 
+   const wrappers = document.querySelectorAll('p'); 
    wrappers.forEach(item => { 
       let options = {
       ellipsis: "\u2026 ",
@@ -45,3 +45,17 @@ document.addEventListener( "DOMContentLoaded", () => {
     });
 });
 
+// автослайдер для секции со статьей
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters 
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  autoplay: {
+   delay: 5000,
+ },
+
+});
