@@ -35,7 +35,7 @@ $(document).ready(function () {
 });
  // многоточие 
 document.addEventListener( "DOMContentLoaded", () => {
-   const wrappers = document.querySelectorAll(['p', 'span', 'h2']); 
+   const wrappers = document.querySelectorAll(['p', 'span']); 
    wrappers.forEach(item => { 
       let options = {
       ellipsis: "\u2026 ",

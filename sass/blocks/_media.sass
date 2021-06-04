@@ -36,6 +36,14 @@
     max-width: 100%
   .tags
     overflow: auto
+  .news
+    &-item
+      &__image
+        max-width: 250px
+        height: 170px
+      &__title
+        font-size: 18px
+        line-height: 23px
 @media ( max-width: 978px )
   .container
     max-width: 768px
@@ -92,6 +100,41 @@
     &__item
       &:nth-child(n+6):nth-child(-n+9)
         padding: 20px 20px 25px
+  .week
+    &__title
+      font-size: 36px
+      line-height: 42px
+  .news
+    &-recent
+      &__title
+        padding: 15px 20px
+        font-size: 12px
+        line-height: 16px
+      &__block
+        padding: 0 20px
+      &__image
+        width: 50px
+      &__text
+        font-size: 12px
+        line-height: 16px
+      &__time
+        font-size: 10px
+    &__block
+      padding: 0 20px
+    &-item
+      padding: 20px 0
+      &__image
+        max-width: 200px
+        height: 140px
+        margin-right: 15px
+      &__theme
+        font-size: 10px
+      &__title
+        font-size: 14px
+        line-height: 18px
+      &__text
+        font-size: 12px
+        line-height: 16px
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -165,7 +208,7 @@
     &__grid
       grid-gap: 15px
       grid-template-columns: repeat(3, 1fr )
-      grid-template-rows: repeat(7, 170px)
+      grid-template-rows: repeat(6, 170px)
     &__item
       &:nth-child(n+6):nth-child(-n+9)
         padding: 15px
@@ -238,6 +281,37 @@
       width: 35px
     &__icon
       width: 100%
+  .week
+    &__title
+      font-size: 28px
+      line-height: 36px
+  .news
+    padding: 40px 0
+    &-wrapper
+      flex-direction: column-reverse
+    &-recent
+      max-width: 768px
+      width: 100%
+      margin-bottom: 20px
+      &__title
+        font-size: 14px
+        line-height: 20px
+      &__item
+        &:nth-child(n+4)
+          display: none
+      &__image
+        width: 60px
+      &__text
+        font-size: 14px
+        line-height: 20px
+      &__time
+        font-size: 12px
+    &__block
+      margin-right: 0
+    &-item
+      &__image
+        max-width: 220px
+        height: 160px
 @media ( max-width: 576px )
   .container
     max-width: 90%
@@ -303,8 +377,23 @@
       font-size: 12px
     &__image
       max-width: 190px
-
-@media ( max-width: 420px )
+  .news
+    &-item
+      &__image
+        max-width: 200px
+        height: 150px
+@media ( max-width: 480px )
+  .news
+    &-item
+      flex-direction: column
+      &__image
+        max-width: 420px
+        height: 230px
+        margin-right: 0
+        margin-bottom: 10px
+      &__bookmark
+        top: 260px
+@media ( max-width: 435px )
   .header
     &__logo
       max-width: 90px
@@ -338,7 +427,6 @@
       flex-basis: 100%
       &:nth-child(even)
         padding-left: 0
-
   .dream
     &__image
       display: none
@@ -354,7 +442,7 @@
       max-width: 80%
     &__grid
       grid-template-columns: 1fr
-      grid-template-rows: repeat(16, 170px)
+      grid-template-rows: repeat(13, 170px)
     &__item
       &:nth-child(1)
         grid-column: 1 / 2
@@ -388,6 +476,23 @@
   .download
     &__title
       max-width: 70%
+  .social
+    &__title
+      font-size: 20px
+    &__link
+      width: 50px
+  .week
+    &__title
+      font-size: 20px
+      line-height: 30px
+@media  ( max-width: 390px)
+  .news
+    &-item
+      &__image
+        height: 180px
+      &__bookmark
+        top: 210px
+
 @media ( min-width: 768px )
   .header
     &-navbar
@@ -432,3 +537,11 @@
       &:hover
         &::before
           opacity: 0.5
+  .news
+    &__link, &-recent__link
+      &:hover
+        text-decoration: underline
+    &-recent
+      &__read-more
+        &:hover
+          text-decoration: underline
