@@ -1,7 +1,10 @@
 .header
   padding: 15px 0 11px
   position: relative
-  background-color: $dark
+  &--primary
+    background-color: $dark
+  &--secondary
+    background-color: #fff
   &-wrapper
     display: flex
     justify-content: space-between
@@ -15,11 +18,13 @@
       &:not(:last-child)
         margin-right: 30px
     &__link
-      color: #fff
       font-size: 14px
       line-height: 20px
       transition: 0.3s
-
+      &--primary
+        color: #fff
+      &--secondary
+        color: $dark
   &__buttons
     display: flex
     align-items: center

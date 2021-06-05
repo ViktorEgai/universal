@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Universal - все о Frontend разработке</title>
+  </head>
+  <body>
+    <header class="header header-secondary">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="index.html" class="header__logo logo">
+            <img class="logo__image" src="img/logo-blue.svg" alt="logo" />
+          </a>
+          <nav class="header-navbar header-navbar--mobile" id="navbar">
+            <ul class="header-navbar__list header-navbar__list--mobile">
+              <li class="header-navbar__item header-navbar__item--mobile">
+                <a href="#articles" class="header-navbar__link header-navbar__link--mobile">Статьи</a>
+              </li>
+              <li class="header-navbar__item header-navbar__item--mobile">
+                <a href="" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">Новости</a>
+              </li>
+              <li class="header-navbar__item header-navbar__item--mobile">
+                <a href="#hot" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">Горячее</a>
+              </li>
+              <li class="header-navbar__item header-navbar__item--mobile">
+                <a href="" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">HTML</a>
+              </li>
+              <li class="header-navbar__item header-navbar__item--mobile">
+                <a href="" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">CSS</a>
+              </li>
+              <li class="header-navbar__item header-navbar__item--mobile">
+                <a href="" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">JavaScript</a>
+              </li>
+              <li class="header-navbar__item header-navbar__item--mobile">
+                <a href="" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">Web Design</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__buttons">
+            <button class="header__button">оставить заявку</button>
+            <button class="header__menu-button menu-button">
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+            </button>
+          </div>
+          <!-- /.header__buttons -->
+        </div>
+        <!-- /.header__wrapper -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <section class="main-news">
+      <div class="main-news__buttons">
+        <a href="index.html" class="main-news__home">
+          <img src="img/icons/Home.svg" alt="icon:home" class="main-news__icon" />
+          На главную
+        </a>
+        <button class="main-news__button main-news__button--prev">
+          <img class="main-news__left" src="img/icons/prev.svg" alt="icon:prev" />
+          Назад
+        </button>
+        <button class="main-news__button main-news__button--next">
+          Вперед
+          <img class="main-news__right" src="img/icons/next.svg" alt="icon:next" />
+        </button>
+      </div>
+      <!-- /.main-news__buttons -->
+      <div class="swiper-container main-news-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide main-news__slide">
+            <div class="container">
+              <div class="main-news__wrapper">
+                <span class="main-news__theme"> новости </span>
+                <svg class="main-news__bookmark">
+                  <use href="img/icons/icons.svg#Bookmark"></use>
+                </svg>
+                <a href="#" class="main-news__Link">
+                  <h2 class="main-news__title">Новый налоговый режим для фрилансеров — налог на проф. доход</h2>
+                  <p class="main-news__text">
+                    Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает неофициально. Разобрались, как работает
+                    режим и кому он подходит, а кому нет.
+                  </p>
+                </a>
+                <div class="main-news__data">
+                  <span class="main-news__date">
+                    <img src="img/icons/Clock.svg" alt="icon:clock" class="main-news__icon" />
+                    6 августа, 10:30
+                  </span>
+                  <span class="main-news__likes">
+                    <img src="img/icons/Heart-grey.svg" alt="icon:like" class="main-news__icon" />
+                    830
+                  </span>
+                  <span class="main-news__comment">
+                    <img src="img/icons/Comment.svg" alt="icon:comment" class="main-news__icon" />
+                    19
+                  </span>
+                </div>
+                <!-- /.main-news__data -->
+              </div>
+              <!-- /.main-news__wrapper -->
+            </div>
+            <!-- /.container -->
+            <img src="img/news/news-1.png" alt="" class="main-news__image" />
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide main-news__slide">
+            <div class="container">
+              <div class="main-news__wrapper">
+                <span class="main-news__theme"> Мнения </span>
+                <svg class="main-news__bookmark">
+                  <use href="img/icons/icons.svg#Bookmark"></use>
+                </svg>
+                <a href="#" class="main-news__Link">
+                  <h2 class="main-news__title">Платные курсы — это не быстрый способ выйти на нужный уровень</h2>
+                  <p class="main-news__text">
+                    Среди новичков распространено мнение, что если пройти какой-то крутой онлайн-курс, то это решит все проблемы. Но они не берут в
+                    расчет, что лучшее обучение — это практика.
+                  </p>
+                </a>
+                <div class="main-news__data">
+                  <span class="main-news__date">
+                    <img src="img/icons/Clock.svg" alt="icon:clock" class="main-news__icon" />
+                    7 октября, 12:30
+                  </span>
+                  <span class="main-news__likes">
+                    <img src="img/icons/Heart-grey.svg" alt="icon:like" class="main-news__icon" />
+                    129
+                  </span>
+                  <span class="main-news__comment">
+                    <img src="img/icons/Comment.svg" alt="icon:comment" class="main-news__icon" />
+                    27
+                  </span>
+                </div>
+                <!-- /.main-news__data -->
+              </div>
+              <!-- /.main-news__wrapper -->
+            </div>
+            <!-- /.container -->
+            <img src="img/news/news-2.png" alt="" class="main-news__image" />
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide main-news__slide">
+            <div class="container">
+              <div class="main-news__wrapper">
+                <span class="main-news__theme"> Горячее </span>
+                <svg class="main-news__bookmark">
+                  <use href="img/icons/icons.svg#Bookmark"></use>
+                </svg>
+                <a href="#" class="main-news__Link">
+                  <h2 class="main-news__title">Из-за ограничений стали недоступны серверы Telegram. К чему это может...</h2>
+                  <p class="main-news__text">
+                    Сегодня мы узнали, что серверы Telegram не доступны на территории России. Разобрались, чем это грозит вам, если ваш бизнес зависит
+                    от этого мессенджера.
+                  </p>
+                </a>
+                <div class="main-news__data">
+                  <span class="main-news__date">
+                    <img src="img/icons/Clock.svg" alt="icon:clock" class="main-news__icon" />
+                    12 декабря, 8:20
+                  </span>
+                  <span class="main-news__likes">
+                    <img src="img/icons/Heart-grey.svg" alt="icon:like" class="main-news__icon" />
+                    284
+                  </span>
+                  <span class="main-news__comment">
+                    <img src="img/icons/Comment.svg" alt="icon:comment" class="main-news__icon" />
+                    30
+                  </span>
+                </div>
+                <!-- /.main-news__data -->
+              </div>
+              <!-- /.main-news__wrapper -->
+            </div>
+            <!-- /.container -->
+            <img src="img/news/news-3.png" alt="" class="main-news__image" />
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide main-news__slide">
+            <div class="container">
+              <div class="main-news__wrapper">
+                <span class="main-news__theme"> Мнения </span>
+                <svg class="main-news__bookmark">
+                  <use href="img/icons/icons.svg#Bookmark"></use>
+                </svg>
+                <a href="#" class="main-news__Link">
+                  <h2 class="main-news__title">В вашем портфолио могут быть фейковые проекты, если вы сделали...</h2>
+                  <p class="main-news__text">
+                    Один из читателей предположил, что если в портфолио положить несуществующий проект, то ничего страшного не произойдет. Он провел
+                    эксперимент и потенциальные заказчики...
+                  </p>
+                </a>
+                <div class="main-news__data">
+                  <span class="main-news__date">
+                    <img src="img/icons/Clock.svg" alt="icon:clock" class="main-news__icon" />
+                    20 июля, 19:30
+                  </span>
+                  <span class="main-news__likes">
+                    <img src="img/icons/Heart-grey.svg" alt="icon:like" class="main-news__icon" />
+                    1,293
+                  </span>
+                  <span class="main-news__comment">
+                    <img src="img/icons/Comment.svg" alt="icon:comment" class="main-news__icon" />
+                    120
+                  </span>
+                </div>
+                <!-- /.main-news__data -->
+              </div>
+              <!-- /.main-news__wrapper -->
+            </div>
+            <!-- /.container -->
+            <img src="img/news/news-4.png" alt="" class="main-news__image" />
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide main-news__slide">
+            <div class="container">
+              <div class="main-news__wrapper">
+                <span class="main-news__theme"> Горячее </span>
+                <svg class="main-news__bookmark">
+                  <use href="img/icons/icons.svg#Bookmark"></use>
+                </svg>
+                <a href="#" class="main-news__Link">
+                  <h2 class="main-news__title">Список стран, куда можно улететь</h2>
+                  <p class="main-news__text">
+                    Если вы приняли решение переехать в другую страну, чтобы найти там работу, сначала посмотрите на список стран, который мы
+                    подготовили для вас. Внутри важная информация про...
+                  </p>
+                </a>
+                <div class="main-news__data">
+                  <span class="main-news__date">
+                    <img src="img/icons/Clock.svg" alt="icon:clock" class="main-news__icon" />
+                    22 октября, 15:24
+                  </span>
+                  <span class="main-news__likes">
+                    <img src="img/icons/Heart-grey.svg" alt="icon:like" class="main-news__icon" />
+                    345
+                  </span>
+                  <span class="main-news__comment">
+                    <img src="img/icons/Comment.svg" alt="icon:comment" class="main-news__icon" />
+                    121
+                  </span>
+                </div>
+                <!-- /.main-news__data -->
+              </div>
+              <!-- /.main-news__wrapper -->
+            </div>
+            <!-- /.container -->
+            <img src="img/news/news-5.png" alt="" class="main-news__image" />
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide main-news__slide">
+            <div class="container">
+              <div class="main-news__wrapper">
+                <span class="main-news__theme"> Подборки </span>
+                <svg class="main-news__bookmark">
+                  <use href="img/icons/icons.svg#Bookmark"></use>
+                </svg>
+                <a href="#" class="main-news__Link">
+                  <h2 class="main-news__title">Список Youtube каналов для тех, кто только начинает изучать разработку</h2>
+                  <p class="main-news__text">
+                    Мы собрали на одной странице кучу ссылок на полезные русскоязычные каналы, посвященные айти. Тут можно найти видеоуроки, лекции и
+                    бесплатные курсы.
+                  </p>
+                </a>
+                <div class="main-news__data">
+                  <span class="main-news__date">
+                    <img src="img/icons/Clock.svg" alt="icon:clock" class="main-news__icon" />
+                    26 октября, 23:15
+                  </span>
+                  <span class="main-news__likes">
+                    <img src="img/icons/Heart-grey.svg" alt="icon:like" class="main-news__icon" />
+                    495
+                  </span>
+                  <span class="main-news__comment">
+                    <img src="img/icons/Comment.svg" alt="icon:comment" class="main-news__icon" />
+                    98
+                  </span>
+                </div>
+                <!-- /.main-news__data -->
+              </div>
+              <!-- /.main-news__wrapper -->
+            </div>
+            <!-- /.container -->
+            <img src="img/news/news-6.png" alt="" class="main-news__image" />
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+      </div>
+      <!-- /.swiper-container -->
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__subscribe subscribe">
+          <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
+          <form class="subscribe__form">
+            <input name="email" type="email" class="subscribe__input" placeholder="Email" />
+            <button type="submit" class="button subscribe__button">Подписаться</button>
+          </form>
+        </div>
+        <!-- /.subscribe -->
+        <div class="footer-top">
+          <div class="footer-top__list">
+            <h3 class="footer-top__title">Новости</h3>
+            <ul class="footer-top__ul">
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Обновления</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Экспресс</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Politics</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Solar Eclipse</a>
+              </li>
+            </ul>
+          </div>
+          <!-- footer-top__list -->
+          <div class="footer-top__list">
+            <h3 class="footer-top__title">Статьи</h3>
+            <ul class="footer-top__ul">
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">HTML</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">CSS</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">JavaScript</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Web Design</a>
+              </li>
+            </ul>
+          </div>
+          <!-- footer-top__list -->
+          <div class="footer-top__list">
+            <h3 class="footer-top__title">Видеоуроки</h3>
+            <ul class="footer-top__ul">
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Скринкасты</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Уроки</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Вебинары</a>
+              </li>
+            </ul>
+          </div>
+          <!-- footer-top__list -->
+          <div class="footer-top__list">
+            <h3 class="footer-top__title">Курсы</h3>
+            <ul class="footer-top__ul">
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Платные интенсивы</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Бесплатные стримы</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Мастер-классы</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link"> Менторство</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link"> Буткемпы </a>
+              </li>
+            </ul>
+          </div>
+          <!-- footer-top__list -->
+          <div class="footer-top__list">
+            <h3 class="footer-top__title">Информация</h3>
+            <ul class="footer-top__ul">
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link"> Политика данных</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="" class="footer-top__link">Оферта сайта</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="" class="footer-top__link">Реквизиты</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="" class="footer-top__link"> Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <!-- footer-top__list -->
+          <div class="footer-top__list">
+            <h3 class="footer-top__title">Категории</h3>
+            <ul class="footer-top__ul">
+              <li class="footer-top__item">
+                <a href="" class="footer-top__link">Популярное</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="" class="footer-top__link">Горячее </a>
+              </li>
+              <li class="footer-top__item">
+                <a href="" class="footer-top__link">Подборки</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="" class="footer-top__link"> Мнения</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="" class="footer-top__link"> Карьера </a>
+              </li>
+            </ul>
+          </div>
+          <!-- footer-top__list -->
+        </div>
+        <!-- /.footer-top -->
+        <div class="footer-middle">
+          <a href="#" class="footer-middle__logo">
+            <img src="img/logo-small.svg" alt="logo" class="footer-middle__image" />
+          </a>
+          <ul class="footer-middle__navbar">
+            <li class="footer-middle__item">
+              <a href="#" class="footer-middle__link">контакты</a>
+            </li>
+            <li class="footer-middle__item">
+              <a href="#" class="footer-middle__link">работа у нас</a>
+            </li>
+            <li class="footer-middle__item">
+              <a href="#" class="footer-middle__link">реклама</a>
+            </li>
+            <li class="footer-middle__item">
+              <a href="#" class="footer-middle__link">обратная связь</a>
+            </li>
+          </ul>
+          <div class="footer-middle__social">
+            <a target="_blank" href="https://www.facebook.com" class="footer-middle__social-link">
+              <img src="img/icons/fb.svg" alt="icon:facebook" class="footer-middle__social-icon" />
+            </a>
+            <a target="_blank" href="https://twitter.com" class="footer-middle__social-link">
+              <img src="img/icons/twitter.svg" alt="icon:twitter" class="footer-middle__social-icon" />
+            </a>
+            <a target="_blank" href="https://youtube.com" class="footer-middle__social-link">
+              <img src="img/icons/yt.svg" alt="icon:youtube" class="footer-middle__social-icon" />
+            </a>
+            <a target="_blank" href="https://instagram.com" class="footer-middle__social-link">
+              <img src="img/icons/inst.svg" alt="icon:instagram" class="footer-middle__social-icon" />
+            </a>
+          </div>
+          <!-- /.footer-middle__social -->
+        </div>
+        <!-- /.footer-middle -->
+        <div class="footer-bottom">
+          <p class="footer-bottom__text">
+            Universal - это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи, новости, видеоуроки, подборки, ссылки
+            и курсы. Материалы на сайте бесплатны, но при копировании,указывайте ссылку.
+          </p>
+          <span class="footer-bottom__rights">&#169; 2020 Univesal Magazine</span>
+        </div>
+        <!-- /.footer-bottom -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/dotdotdot.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

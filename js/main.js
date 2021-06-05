@@ -26,10 +26,14 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop: top}, 200);
     });
     
-   // кнопка изюранного
+   // кнопка избранного
   var bookMark = $(".news-item__bookmark");
   bookMark.on("click", function () {    
     $(this).toggleClass("news-item__bookmark--active");
+  });
+  var bigMark = $(".main-news__bookmark");
+  bigMark.on("click", function () {    
+    $(this).toggleClass("main-news__bookmark--active");
   });
 
 });
@@ -46,7 +50,7 @@ document.addEventListener( "DOMContentLoaded", () => {
 });
 
 // автослайдер для секции со статьей
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.career-swiper', {
   // Optional parameters 
   loop: true,
 
@@ -55,7 +59,23 @@ const swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
   },
   autoplay: {
-   delay: 5000,
+   delay: 3000,
  },
 
+});
+// слайдер для новостей
+const swiperNews = new Swiper('.main-news-swiper', {
+
+  loop: true,
+
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.main-news__button--next',
+    prevEl: '.main-news__button--prev',
+  },
+
+
+ 
 });
