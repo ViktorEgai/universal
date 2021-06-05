@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -21,12 +21,12 @@
             <img class="logo__image" src="img/logo.svg" alt="logo" />
           </a>
           <nav class="header-navbar header-navbar--mobile" id="navbar">
-            <ul class="header-navbar__list header-navbar__list--mobile">
+            <ul class="header-navbar__list header-navbar__list--mobile header-navbar__list--mobile--black">
               <li class="header-navbar__item header-navbar__item--mobile">
                 <a href="#articles" class="header-navbar__link header-navbar__link--primary header-navbar__link--mobile">Статьи</a>
               </li>
               <li class="header-navbar__item header-navbar__item--mobile">
-                <a href="" class="header-navbar__link header-navbar__link--primary header-navbar__link--mobile">Новости</a>
+                <a href="#news" class="header-navbar__link header-navbar__link--primary header-navbar__link--mobile">Новости</a>
               </li>
               <li class="header-navbar__item header-navbar__item--mobile">
                 <a href="#hot" class="header-navbar__link header-navbar__link--primary header-navbar__link--mobile">Горячее</a>
@@ -35,22 +35,22 @@
                 <a href="" class="header-navbar__link header-navbar__link--primary header-navbar__link--mobile">HTML</a>
               </li>
               <li class="header-navbar__item header-navbar__item--mobile">
-                <a href="" class="header-navbar__link header-navbar__link--primary header-navbar__link--mobile">CSS</a>
+                <a href="#footer" class="header-navbar__link header-navbar__link--primary header-navbar__link--mobile">CSS</a>
               </li>
               <li class="header-navbar__item header-navbar__item--mobile">
-                <a href="" class="header-navbar__link header-navbar__link--primary header-navbar__link--mobile">JavaScript</a>
+                <a href="#footer" class="header-navbar__link header-navbar__link--primary header-navbar__link--mobile">JavaScript</a>
               </li>
               <li class="header-navbar__item header-navbar__item--mobile">
-                <a href="" class="header-navbar__link header-navbar__link--primary header-navbar__link--mobile">Web Design</a>
+                <a href="#footer" class="header-navbar__link header-navbar__link--primary header-navbar__link--mobile">Web Design</a>
               </li>
             </ul>
           </nav>
           <div class="header__buttons">
             <button class="header__button">оставить заявку</button>
             <button class="header__menu-button menu-button">
-              <span class="menu-button__line"></span>
-              <span class="menu-button__line"></span>
-              <span class="menu-button__line"></span>
+              <span class="menu-button__line menu-button__line--white"></span>
+              <span class="menu-button__line menu-button__line--white"></span>
+              <span class="menu-button__line menu-button__line--white"></span>
             </button>
           </div>
           <!-- /.header__buttons -->
@@ -112,7 +112,7 @@
                   Как использовать CSS float <br />
                   после того, как вышел Flexbox
                 </h3>
-                <a href="#" class="content__link button">
+                <a href="news.html" class="content__link button">
                   <span>Читать далее</span>
                   <img src="img/icons/Arrow.svg" alt="icon:arrow" />
                 </a>
@@ -274,7 +274,7 @@
                   <span class="popular__username">Сара Женникова</span>
                   <div class="popular__data">
                     <span class="popular__date"> 25 сентября</span>
-                    <span class="popular__comments"> <img src="img/icons/Comment.svg" alt="" class="popular__icon" /> 16 </span>
+                    <span class="popular__comments"> <img src="img/icons/Comment-white.svg" alt="" class="popular__icon" /> 16 </span>
                     <span class="popular__likes"> <img src="img/icons/Heart.svg" alt="icon:heart" class="popular__icon" /> 832 </span>
                   </div>
                   <!-- /.popular__data -->
@@ -383,7 +383,7 @@
       <!-- /.container -->
     </section>
 
-    <section class="news">
+    <section class="news" id="news">
       <div class="container">
         <div class="news-wrapper">
           <div class="news__block">
@@ -678,8 +678,6 @@
                 <!-- /.swiper-slide -->
               </div>
               <!-- If we need pagination -->
-              <div class="swiper-pagination choice__pagination"></div>
-              <!-- If we need navigation buttons -->
             </div>
             <!-- /.swiper-container -->
             <div class="choice-wrapper">
@@ -695,6 +693,8 @@
                 Cмотреть фото
                 <span class="choice__count">26</span>
               </a>
+              <div class="swiper-pagination choice__pagination"></div>
+              <!-- If we need navigation buttons -->
             </div>
             <!-- /.choice-wrapper -->
           </div>
@@ -725,7 +725,7 @@
       <!-- /.container -->
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__subscribe subscribe">
           <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
@@ -894,6 +894,7 @@
         <!-- /.footer-bottom -->
       </div>
       <!-- /.container -->
+      <a href="#" class="to-top" id="toTop"> <img src="img/icons/arrowup.png" alt="arrow" class="to-top__icon" /> </a>
     </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/dotdotdot.js"></script>

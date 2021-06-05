@@ -20,37 +20,37 @@
           <a href="index.html" class="header__logo logo">
             <img class="logo__image" src="img/logo-blue.svg" alt="logo" />
           </a>
-          <nav class="header-navbar header-navbar--mobile" id="navbar">
-            <ul class="header-navbar__list header-navbar__list--mobile">
+          <nav class="header-navbar header-navbar--mobile">
+            <ul class="header-navbar__list header-navbar__list--mobile header-navbar__list--mobile--white">
               <li class="header-navbar__item header-navbar__item--mobile">
-                <a href="#articles" class="header-navbar__link header-navbar__link--mobile">Статьи</a>
+                <a href="index.html#articles" class="header-navbar__link header-navbar__link--mobile">Статьи</a>
               </li>
               <li class="header-navbar__item header-navbar__item--mobile">
-                <a href="" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">Новости</a>
+                <a href="index.html#news" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">Новости</a>
               </li>
               <li class="header-navbar__item header-navbar__item--mobile">
-                <a href="#hot" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">Горячее</a>
+                <a href="index.html#hot" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">Горячее</a>
               </li>
               <li class="header-navbar__item header-navbar__item--mobile">
-                <a href="" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">HTML</a>
+                <a href="index.html#footer" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">HTML</a>
               </li>
               <li class="header-navbar__item header-navbar__item--mobile">
-                <a href="" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">CSS</a>
+                <a href="index.html#footer" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">CSS</a>
               </li>
               <li class="header-navbar__item header-navbar__item--mobile">
-                <a href="" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">JavaScript</a>
+                <a href="index.html#footer" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">JavaScript</a>
               </li>
               <li class="header-navbar__item header-navbar__item--mobile">
-                <a href="" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">Web Design</a>
+                <a href="index.html#footer" class="header-navbar__link header-navbar__link--secondary header-navbar__link--mobile">Web Design</a>
               </li>
             </ul>
           </nav>
           <div class="header__buttons">
             <button class="header__button">оставить заявку</button>
             <button class="header__menu-button menu-button">
-              <span class="menu-button__line"></span>
-              <span class="menu-button__line"></span>
-              <span class="menu-button__line"></span>
+              <span class="menu-button__line menu-button__line--black"></span>
+              <span class="menu-button__line menu-button__line--black"></span>
+              <span class="menu-button__line menu-button__line--black"></span>
             </button>
           </div>
           <!-- /.header__buttons -->
@@ -60,21 +60,27 @@
       <!-- /.container -->
     </header>
     <section class="main-news">
-      <div class="main-news__buttons">
-        <a href="index.html" class="main-news__home">
-          <img src="img/icons/Home.svg" alt="icon:home" class="main-news__icon" />
-          На главную
-        </a>
-        <button class="main-news__button main-news__button--prev">
-          <img class="main-news__left" src="img/icons/prev.svg" alt="icon:prev" />
-          Назад
-        </button>
-        <button class="main-news__button main-news__button--next">
-          Вперед
-          <img class="main-news__right" src="img/icons/next.svg" alt="icon:next" />
-        </button>
+      <div class="container">
+        <div class="main-news__top">
+          <div class="main-news__buttons">
+            <a href="index.html" class="main-news__home">
+              <img src="img/icons/Home.svg" alt="icon:home" class="main-news__icon" />
+              На главную
+            </a>
+            <button class="main-news__button main-news__button--prev">
+              <img class="main-news__left" src="img/icons/prev.svg" alt="icon:prev" />
+              Назад
+            </button>
+            <button class="main-news__button main-news__button--next">
+              Вперед
+              <img class="main-news__right" src="img/icons/next.svg" alt="icon:next" />
+            </button>
+          </div>
+          <!-- /.main-news__buttons -->
+        </div>
+        <!-- /.main-news__top -->
       </div>
-      <!-- /.main-news__buttons -->
+      <!-- /.container -->
       <div class="swiper-container main-news-swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -86,7 +92,7 @@
                 <svg class="main-news__bookmark">
                   <use href="img/icons/icons.svg#Bookmark"></use>
                 </svg>
-                <a href="#" class="main-news__Link">
+                <a href="#" class="main-news__link">
                   <h2 class="main-news__title">Новый налоговый режим для фрилансеров — налог на проф. доход</h2>
                   <p class="main-news__text">
                     Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает неофициально. Разобрались, как работает
@@ -122,7 +128,7 @@
                 <svg class="main-news__bookmark">
                   <use href="img/icons/icons.svg#Bookmark"></use>
                 </svg>
-                <a href="#" class="main-news__Link">
+                <a href="#" class="main-news__link">
                   <h2 class="main-news__title">Платные курсы — это не быстрый способ выйти на нужный уровень</h2>
                   <p class="main-news__text">
                     Среди новичков распространено мнение, что если пройти какой-то крутой онлайн-курс, то это решит все проблемы. Но они не берут в
@@ -158,7 +164,7 @@
                 <svg class="main-news__bookmark">
                   <use href="img/icons/icons.svg#Bookmark"></use>
                 </svg>
-                <a href="#" class="main-news__Link">
+                <a href="#" class="main-news__link">
                   <h2 class="main-news__title">Из-за ограничений стали недоступны серверы Telegram. К чему это может...</h2>
                   <p class="main-news__text">
                     Сегодня мы узнали, что серверы Telegram не доступны на территории России. Разобрались, чем это грозит вам, если ваш бизнес зависит
@@ -194,7 +200,7 @@
                 <svg class="main-news__bookmark">
                   <use href="img/icons/icons.svg#Bookmark"></use>
                 </svg>
-                <a href="#" class="main-news__Link">
+                <a href="#" class="main-news__link">
                   <h2 class="main-news__title">В вашем портфолио могут быть фейковые проекты, если вы сделали...</h2>
                   <p class="main-news__text">
                     Один из читателей предположил, что если в портфолио положить несуществующий проект, то ничего страшного не произойдет. Он провел
@@ -230,7 +236,7 @@
                 <svg class="main-news__bookmark">
                   <use href="img/icons/icons.svg#Bookmark"></use>
                 </svg>
-                <a href="#" class="main-news__Link">
+                <a href="#" class="main-news__link">
                   <h2 class="main-news__title">Список стран, куда можно улететь</h2>
                   <p class="main-news__text">
                     Если вы приняли решение переехать в другую страну, чтобы найти там работу, сначала посмотрите на список стран, который мы
@@ -266,7 +272,7 @@
                 <svg class="main-news__bookmark">
                   <use href="img/icons/icons.svg#Bookmark"></use>
                 </svg>
-                <a href="#" class="main-news__Link">
+                <a href="#" class="main-news__link">
                   <h2 class="main-news__title">Список Youtube каналов для тех, кто только начинает изучать разработку</h2>
                   <p class="main-news__text">
                     Мы собрали на одной странице кучу ссылок на полезные русскоязычные каналы, посвященные айти. Тут можно найти видеоуроки, лекции и

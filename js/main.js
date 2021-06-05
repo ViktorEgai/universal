@@ -17,15 +17,34 @@ $(document).ready(function () {
     $(".header-navbar")
     .toggleClass("header-navbar--visible");
   });
+  $(document).scroll(function() {
+    $(".header-navbar").removeClass("header-navbar--visible");
+    
+  });
+
+  var toTop = $(".to-top");
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 200){
+     toTop.addClass("to-top--visible");
+    }else{
+   toTop.removeClass("to-top--visible");
+  };
+  });
+  
+
 
   // плавный скролл якорных ссылок
   $("#navbar").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 200);
+        $('body,html').animate({scrollTop: top}, 500);
     });
-    
+   
+
+ 
+
+  
    // кнопка избранного
   var bookMark = $(".news-item__bookmark");
   bookMark.on("click", function () {    
@@ -37,6 +56,7 @@ $(document).ready(function () {
   });
 
 });
+
  // многоточие 
 document.addEventListener( "DOMContentLoaded", () => {
    const wrappers = document.querySelectorAll('p'); 
@@ -56,7 +76,8 @@ const swiper = new Swiper('.career-swiper', {
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.choice__pagination',
+    clickable: true,
   },
   autoplay: {
    delay: 3000,
@@ -65,17 +86,10 @@ const swiper = new Swiper('.career-swiper', {
 });
 // слайдер для новостей
 const swiperNews = new Swiper('.main-news-swiper', {
-
   loop: true,
-
-
-
   // Navigation arrows
   navigation: {
     nextEl: '.main-news__button--next',
     prevEl: '.main-news__button--prev',
-  },
-
-
- 
+  }, 
 });

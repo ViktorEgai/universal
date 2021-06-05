@@ -1,20 +1,25 @@
 .main-news
   position: relative
   color: #fff
+  &__top
+    position: relative
   &__wrapper
     padding: 63px 97px 72px
     position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-between
   &__buttons
     position: absolute
     top: 60px
-    right: 23%
+    right: 8%
     z-index: 10
     max-width: 300px
     display: flex
   &__home, &__button
     display: flex
     align-items: center
-    font-weight: 700
+    font-weight: 900
     font-size: 14px
     line-height: 20px
   &__home
@@ -30,7 +35,6 @@
     border: none
     color: inherit
     cursor: pointer
-
   &__slide
     height: 590px
     &::before
@@ -59,6 +63,7 @@
     width: 21px
     height: 27px
     fill: #BCBFC2
+    cursor: pointer
     &--active
       fill: #FF4F52
   &__title
