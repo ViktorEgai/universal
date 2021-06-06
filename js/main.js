@@ -93,3 +93,12 @@ const swiperNews = new Swiper('.main-news-swiper', {
     prevEl: '.main-news__button--prev',
   }, 
 });
+// слайдер для на второй странице 
+const swiperArticle = new Swiper('.hero-article__swiper', {
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.hero-article__slide-button--next',
+    prevEl: '.hero-article__slide-button--prev',
+  }, 
+});

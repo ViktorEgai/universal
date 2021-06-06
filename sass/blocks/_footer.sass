@@ -1,4 +1,3 @@
-
 .subscribe
   padding: 60px 0 70px
   display: flex
@@ -41,12 +40,13 @@
 .footer
   background-color: #fff
   &-top
-    padding-bottom: 64px
+    padding-bottom: 48px
     display: flex
     justify-content: space-between
     &__list
       padding-top: 30px
-      width: 195px
+      &:not(:last-child)
+        width: 195px
       &:nth-child(1)
         border-top: 5px solid #FF4F52
       &:nth-child(2)
@@ -59,8 +59,9 @@
         border-top: 5px solid #3DC47E
       &:nth-child(6)
         border-top: 5px solid #6E99AE
+        width: 165px
     &__title
-      font-weight: 700
+      font-weight: 900
       font-size: 14px
       line-height: 20px
       color: $dark
@@ -107,7 +108,7 @@
         height: 40px
         position: relative
         &:not(:last-child)
-          margin-right: 15px
+          margin-right: 10px
         &::before
           content: ''
           position: absolute
@@ -132,3 +133,14 @@
     color: #939699
     &__text
       max-width: 750px
+.to-top
+  position: fixed
+  bottom: 3%
+  right: 3%
+  width: 40px
+  height: 40px
+  display: none
+  &--visible
+    display: block
+  &__icon
+    width: 100%
