@@ -29,6 +29,10 @@
     width: 263px
     border: 1px solid #D9DADB
     border-radius: 10px
+    &-text
+      display: flex
+      align-items: center
+      flex-direction: column
     &-info
       font-size: 14px
       line-height: 20px
@@ -94,19 +98,21 @@
     border: 1px solid #D9DADB
     border-radius: 10px
     overflow: hidden
-    position: relative
+
     margin-bottom: 45px
   &__slide
     display: flex
     flex-direction: column
     &-image
       height: 555px
+      object-fit: cover
     &-info
       display: flex
+      justify-content: space-between
     &-text
       padding: 25px 35px
       display: inline-block
-      margin-right: auto
+      width: 65%
       font-size: 14px
       line-height: 20px
       color: #4B5157
@@ -115,14 +121,19 @@
       padding: 10px 60px 13px 30px
     &-button
       position: absolute
-      top: 245px
+      top: 39%
       z-index: 20
       background-color: transparent
       border: none
+      width: 70px
+      height: 70px
       &--prev
         left: 30px
       &--next
         right: 30px
+    &-icon
+      width: 100%
+      height: 100%
   &__subtitle
     font-family: 'Roboto Slab', serif
     font-weight: bold
@@ -147,7 +158,9 @@
     top: 130px
     right: 100px
     width: 263px
-
+    &-wrapper
+      display: flex
+      flex-direction: column
     &-title, &-subtitle
       font-family: 'Roboto Slab', serif
       line-height: 25px
@@ -196,6 +209,7 @@
     width: 653px
     margin-left: 100px
     padding: 30px 0
+    border-top: 1px solid #D9DADB
     &-title
       font-family: 'Roboto Slab', serif
       font-weight: bold

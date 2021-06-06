@@ -96,6 +96,10 @@ const swiperNews = new Swiper('.main-news-swiper', {
 // слайдер для на второй странице 
 const swiperArticle = new Swiper('.hero-article__swiper', {
   loop: true,
+   keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
   // Navigation arrows
   navigation: {
     nextEl: '.hero-article__slide-button--next',

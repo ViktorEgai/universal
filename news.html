@@ -311,9 +311,12 @@
           <div class="hero-article__user">
             <div class="hero-article__userbio">
               <img src="img/hero-article/main-avatar.png" alt="Мира Стахова" class="hero-article__avatar" />
-              <span class="hero-article__username">Мира Стахова</span>
+              <div class="hero-article__user-text">
+                <span class="hero-article__username">Мира Стахова</span>
               <span class="hero-article__user-info">Фрилансер</span>
               <span class="hero-article__user-count">82 статьи</span>
+              </div>
+              <!-- /.hero-articles__user-text -->
             </div>
             <!-- /.hero-article__userbio -->
             <a href="#" class="hero-article__user-link">Страница автора</a>
@@ -369,6 +372,22 @@
                 <!-- /.hero-article__slide-info -->
               </div>
               <!-- /.swiper-slide -->
+              <div class="swiper-slide hero-article__slide">
+                <img src="img/hero-article/slide-2.jpg" alt="" class="hero-article__slide-image" />
+                <div class="hero-article__slide-info">
+                  <span class="hero-article__slide-text"> ДНК Путешественника: зачем мы колесим по свету </span>
+                  <a href="#" class="hero-article__slide-user user">
+                    <img src="img/hero-article/slider-avatar-2.jpg" alt="avatar: Андрей Вашигаев" class="user__avatar" />
+                    <div class="user__bio">
+                      <span class="user__name user__name--dark">Владимир Астахов</span>
+                      <span class="user__info user__info--dark">Блогер
+                    </div>
+                    <!-- /.user__bio -->
+                  </a>
+                </div>
+                <!-- /.hero-article__slide-info -->
+              </div>
+              <!-- /.swiper-slide -->
             </div>
 
             <!-- If we need navigation buttons -->
@@ -413,8 +432,10 @@
             </p>
             <div class="hero-article__theme">
               <h3 class="hero-article__theme-title">Материал по теме</h3>
-              <img src="img/hero-article/material.png" alt="жираф" class="hero-article__theme-image" />
-              <h4 class="hero-article__theme-subtitle">20+ инструментов для&nbsp;js&#8209;разработчика</h4>
+              <div class="hero-article__theme-wrapper">
+                <img src="img/hero-article/material.png" alt="жираф" class="hero-article__theme-image" />
+              <div class="hero-article__theme-info">
+                <h4 class="hero-article__theme-subtitle">20+ инструментов для&nbsp;js&#8209;разработчика</h4>
               <p class="hero-article__theme-text">
                 Узнайте, какими инструментами вы еще не пользовались, а могли бы. Эти инструменты помогут вам ускорить свою работу или повысить ее
                 качество. Все инструменты собраны в виде...
@@ -424,6 +445,10 @@
                 <span class="hero-article__theme-comments">
                   <img class="hero-article__theme-icon" src="img/icons/Comment.svg" alt="icon:comment" />102</span
                 >
+              </div>
+              <!-- /.hero-article__theme-info -->
+              </div>
+              <!-- /.hero-article__theme-wrapper -->
               </div>
               <!-- /.hero-article__theme-data -->
             </div>
