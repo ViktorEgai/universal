@@ -1,27 +1,43 @@
 .main-news
   position: relative
   color: #fff
-  &__top
-    position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: -10
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url('../img/news/news-1.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
   &__wrapper
-    padding: 63px 97px 72px
-    position: relative
+    padding: 60px 97px 72px
     display: flex
     flex-direction: column
     justify-content: space-between
+    position: relative
+  &__top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 52px
   &__buttons
-    position: absolute
-    top: 60px
-    right: 8%
-    z-index: 10
     max-width: 300px
     display: flex
+
   &__home, &__button
     display: flex
     align-items: center
     font-weight: 900
     font-size: 14px
     line-height: 20px
+  &__button
+    &--prev
+      margin-right: 20px
   &__home
     margin-right: 32px
   &__icon
@@ -30,31 +46,15 @@
     margin-right: 8px
   &__right
     margin-left: 8px
-  &__button
-    background-color: transparent
-    border: none
-    color: inherit
-    cursor: pointer
-  &__slide
-    height: 590px
-    &::before
-      content: ''
-      position: absolute
-      top: 0
-      left: 0
-      z-index: -9
-      width: 100%
-      height: 100%
-      background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75))
+
   &__theme
-    display: inline-block
     font-weight: 900
     font-size: 12px
     line-height: 15px
     letter-spacing: 0.5px
     text-transform: uppercase
     color: #4592ff
-    margin-bottom: 52px
+
   &__bookmark
     position: absolute
     top: 151px

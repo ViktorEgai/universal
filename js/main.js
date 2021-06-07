@@ -21,7 +21,7 @@ $(document).ready(function () {
     $(".header-navbar").removeClass("header-navbar--visible");
     
   });
-
+//  кнопка наверх
   var toTop = $(".to-top");
   $(window).scroll(function() {
     if ($(this).scrollTop() > 200){
@@ -31,6 +31,9 @@ $(document).ready(function () {
   };
   });
   
+  $(".to-top").click(function () {                
+        $('body,html').animate({scrollTop: 0}, 400);
+  });
 
 
   // плавный скролл якорных ссылок
@@ -40,10 +43,6 @@ $(document).ready(function () {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
     });
-   
-
- 
-
   
    // кнопка избранного
   var bookMark = $(".news-item__bookmark");
@@ -84,15 +83,7 @@ const swiper = new Swiper('.career-swiper', {
  },
 
 });
-// слайдер для новостей
-const swiperNews = new Swiper('.main-news-swiper', {
-  loop: true,
-  // Navigation arrows
-  navigation: {
-    nextEl: '.main-news__button--next',
-    prevEl: '.main-news__button--prev',
-  }, 
-});
+
 // слайдер для на второй странице 
 const swiperArticle = new Swiper('.hero-article__swiper', {
   loop: true,

@@ -1,7 +1,7 @@
 @media  ( max-width: 1200px )
   .container
     max-width: 978px
-    width: 95%
+    width: 90%
   .header
     &-navbar
       &__item
@@ -54,8 +54,6 @@
           font-size: 14px
           line-height: 25px
   .main-news
-    &__buttons
-      right: 15%
     &__title
       font-size: 40px
       line-height: 50px
@@ -239,9 +237,7 @@
       line-height: 50px
     &__bookmark
       top: 116px
-    &__buttons
-      top: 35px
-      right: 15%
+
   .hero-article
     &__user
       top: 0
@@ -252,21 +248,16 @@
     &__paragraph
       font-size: 16px
       line-height: 24px
-    &__theme
-      right: 0
-    &__subtitle
 
+    &__subtitle
       font-size: 18px
       line-height: 24px
     &__text
       padding: 0 70px
-      &--mb5
-        padding-bottom: 250px
     &__theme
-      top: 82%
-      right: auto
-      left: 70px
-      width: 70vw
+      position: static
+      max-width: 550px
+      width: 100%
       &-wrapper
         flex-direction: row
         align-items: center
@@ -506,21 +497,19 @@
       &__text
         margin-bottom: 20px
   .main-news
-    &__slide
-      height: 450px
+    &__wrapper
+      padding-top: 40px
+      padding-left: 0
+      padding-right: 0
+    &__top
+      flex-wrap: wrap-reverse
+      margin-bottom: 30px
     &__buttons
       justify-content: space-between
       max-width: 576px
       width: 100%
-      top: 35px
-      right: auto
-      left: 0
-    &__theme
-      margin-bottom: 35px
-    &__wrapper
-      padding-top: 80px
-      padding-left: 0
-      padding-right: 0
+      margin-bottom: 20px
+
     &__home
       margin-right: auto
     &__bookmark
@@ -533,15 +522,28 @@
       margin-bottom: 60px
       height: auto
   .hero-article
-    padding-top: 70px
+    padding-top: 60px
     &__avatar
       margin: 0 10px 0 0
+      width: 70px
+      height: 70px
     &__user
-      top: -150px
+      top: -140px
       right: 0
       width: auto
       &-text
         align-items: flex-start
+      &-info
+        margin-bottom: 8px
+        font-size: 12px
+        line-height: 18px
+      &-link
+        font-size: 12px
+        line-height: 18px
+        padding: 10px 0
+    &__username
+      font-size: 16px
+      line-height: 20px
     &__userbio
       flex-direction: row
       align-items: center
@@ -552,8 +554,6 @@
         float: none
     &__text
       padding: 0
-      &--mb5
-        padding-bottom: 200px
     &__slide
       &-info
         flex-direction: column-reverse
@@ -707,24 +707,44 @@
       &__social
         margin-top: 10px
   .main-news
-    &__buttons
-      top: 25px
-    &__wrapper
-      // padding-top: 60px
     &__bookmark
-
       width: 17px
       height: 19px
-    &__theme
-      margin-bottom: 25px
     &__title
-      font-size: 23px
+      font-size: 22px
       line-height: 32px
       margin-bottom: 55px
     &__text
       font-size: 16px
       line-height: 24px
-
+  .hero-article
+    padding-top: 125px
+    &__user
+      width: 70%
+      right: 50%
+      transform: translateX(50%)
+    &__lead
+      &::first-letter
+        font-size: 60px
+        line-height: 50px
+        margin-left: -4px
+        margin-right: 0
+    &__slide
+      &-image
+        height: 330px
+      &-button
+        top: 35%
+        &--prev
+          left: 15px
+        &--next
+          right: 15px
+    &__tag
+      &-link
+        margin-bottom: 10px
+    &__theme
+      &-image
+        width: 200px
+        height: 150px
 @media ( max-width: 480px )
   .news
     &-item
@@ -768,6 +788,16 @@
     &__text
       font-size: 14px
       line-height: 20px
+  .hero-article
+    &__theme
+      &-wrapper
+        flex-direction: column
+      &-image
+        width: 80%
+        height: 200px
+        margin-right: 0
+        margin-bottom: 10px
+
 @media ( max-width: 435px )
   .header
     &__logo
@@ -860,7 +890,24 @@
     &__title
       font-size: 20px
       line-height: 30px
-
+  .hero-article
+    padding-top: 150px
+    &__user
+      top: -170px
+      width: 85%
+    &__slide
+      &-image
+        height: 220px
+    &__repost
+      &-title
+        font-size: 18px
+        line-height: 24px
+      &-wrapper
+        flex-direction: column
+      &-link
+        margin-bottom: 15px
+        &:not(:last-child)
+          margin-right: 0
 @media  ( max-width: 390px)
   .career
     &-card
@@ -872,7 +919,10 @@
         height: 180px
       &__bookmark
         top: 210px
-
+  .hero-article
+    &__theme
+      &-image
+        width: 100%
 @media ( min-width: 992px )
   .header
     &-navbar
