@@ -99,7 +99,6 @@
     border: 1px solid #D9DADB
     border-radius: 10px
     overflow: hidden
-
     margin-bottom: 45px
   &__slide
     display: flex
@@ -178,22 +177,12 @@
     &-subtitle
       font-size: 16px
       margin-bottom: 5px
+      max-width: 187px
     &-text
       font-size: 14px
       line-height: 20px
       margin-bottom: 20px
-    &-data
-      display: flex
-    &-views, &-comments
-      font-size: 12px
-      line-height: 15px
-      color: #939699
-      display: flex
-      align-items: center
-    &-views
-      margin-right: 11px
-    &-icon
-      margin-right: 5.75px
+
   &__tag
     padding-left: 100px
     margin-bottom: 60px
@@ -247,3 +236,15 @@
     &-count
       font-size: 14px
       line-height: 20px
+.data
+  display: flex
+  &__views, &__comments
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+    display: flex
+    align-items: center
+  &__views
+    margin-right: 11px
+  &__icon
+    margin-right: 5.75px
