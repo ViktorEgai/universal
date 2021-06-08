@@ -131,11 +131,13 @@ const swiperArticle = new Swiper('.hero-article__swiper', {
     $('body').removeClass("overflow"); 
     }    
   });
-  $('.modal__overlay').on('click', function() {
-    $(".modal").removeClass("modal--visible");
-    $('body').removeClass("overflow"); 
-  });
-	
+  
+	$(document).click(function(event) {
+  //if you click on anything except the modal itself or the "open modal" link, close the modal
+  if (!$(event.target).closest(".modal__dialog,.header__button").length) {
+    $("body").find(".modal").removeClass("modal--visible");
+  }
+});
 // подключению кнопки показать еще
 $(function () {
     $(".comments__item").slice(0, 4).show();
