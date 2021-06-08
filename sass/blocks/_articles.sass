@@ -44,7 +44,7 @@
   padding-bottom: 60px
   &__image
     width: 100%
-    max-height: 275px
+    max-height: 270px
     object-fit: cover
     position: relative
     z-index: -3
@@ -81,7 +81,7 @@
     display: grid
     grid-gap: 30px
     grid-template-columns: repeat(4, 1fr )
-    grid-template-rows: repeat(4, 170px)
+    grid-template-rows: repeat(4, minmax(170px, 1fr))
     width: 100%
   &__item
     border-radius: 10px
