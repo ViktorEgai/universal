@@ -29,8 +29,7 @@ $(document).ready(function () {
     }else{
    toTop.removeClass("to-top--visible");
   };
-  });
-  
+  });  
   $(".to-top").click(function () {                
         $('body,html').animate({scrollTop: 0}, 400);
   });
@@ -43,7 +42,15 @@ $(document).ready(function () {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
     });
-  
+ 
+ 
+  $(".comments__add").on("click", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
+
    // кнопка избранного
   var bookMark = $(".news-item__bookmark");
   bookMark.on("click", function () {    

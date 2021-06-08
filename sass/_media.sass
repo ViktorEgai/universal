@@ -63,12 +63,19 @@
     &__lead
       max-width: 550px
     &__paragraph
-      max-width: 550px
+      max-width: 520px
     &__theme
       right: 0
     &__subtitle
       max-width: 550px
       font-size: 24px
+  .more-articles
+    &__card
+      max-width: 210px
+    &__image
+      height: 160px
+    &__title
+      font-size: 14px
 @media ( max-width: 978px )
   .container
     max-width: 768px
@@ -269,6 +276,19 @@
       padding-left: 70px
     &__repost
       margin-left: 70px
+  .more-articles
+    padding: 40px 0 60px
+    &__card
+      max-width: 168px
+    &__image
+      height: 120px
+    &__title
+      font-size: 12px
+      line-height: 18px
+  .comments
+    padding-top: 60px
+    &__wrapper
+      margin-left: 0
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -522,7 +542,7 @@
       margin-bottom: 60px
       height: auto
   .hero-article
-    padding-top: 60px
+    padding-bottom: 40px
     &__avatar
       margin: 0 10px 0 0
       width: 70px
@@ -594,6 +614,40 @@
     &__name
       font-size: 12px
       line-height: 18px
+  .more-articles
+    &__wrapper
+      flex-wrap: wrap
+    &__card
+      max-width: 768px
+      flex-basis: 47%
+      margin-bottom: 30px
+    &__image
+      height: 180px
+    &__title
+      font-size: 14px
+      line-height: 25px
+  .comments
+    padding-top: 60px
+    &__title, &__count
+      font-size: 28px
+      line-height: 40px
+    &__item
+      &--pl9
+        padding-left: 60px
+      &-avatar
+        width: 45px
+        height: 45px
+      &-name
+        font-size: 14px
+        line-height: 22px
+      &-text
+        font-size: 14px
+        line-height: 25px
+    &__form
+      &-avatar
+        width: 45px
+        height: 45px
+
 @media ( max-width: 576px )
   .container
     max-width: 90%
@@ -745,6 +799,29 @@
       &-image
         width: 200px
         height: 150px
+  .more-articles
+    &__image
+      height: 140px
+    &__title
+      font-size: 14px
+      line-height: 25px
+  .comments
+    padding-top: 60px
+    &__title, &__count
+      font-size: 20px
+      line-height: 30px
+    &__add
+      font-size: 12px
+      padding: 7px 16px
+    &__form
+      padding: 18px 25px
+      &-title
+        font-size: 18px
+        text-align: center
+        margin: 0 auto 15px
+      &-button
+        margin: 0 auto
+
 @media ( max-width: 480px )
   .news
     &-item
@@ -789,6 +866,7 @@
       font-size: 14px
       line-height: 20px
   .hero-article
+    padding-bottom: 0
     &__theme
       &-wrapper
         flex-direction: column
@@ -908,6 +986,50 @@
         margin-bottom: 15px
         &:not(:last-child)
           margin-right: 0
+  .more-articles
+    padding-bottom: 40px
+    &__wrapper
+      justify-content: center
+    &__card
+      flex-basis: 85%
+    &__image
+      height: 200px
+    &__title
+      font-size: 14px
+      line-height: 25px
+  .comments
+    padding-top: 60px
+    &__top
+      flex-wrap: wrap
+    &__title
+      margin-bottom: 10px
+    &__item
+      &--pl9
+        padding-left: 30px
+      &-avatar
+        width: 30px
+        height: 30px
+        margin-right: 10px
+      &-time
+        font-size: 10px
+      &-text
+        font-size: 12px
+        line-height: 18px
+    &__form
+      &-title
+        font-size: 14px
+      &-avatar
+        width: 30px
+        height: 30px
+        margin-right: 12px
+      &-input
+        min-height: 100px
+      &-textarea
+        min-height: 100px
+  .subscribe
+    &__title
+      font-size: 14px
+
 @media  ( max-width: 390px)
   .career
     &-card
