@@ -46,7 +46,7 @@
             </ul>
           </nav>
           <div class="header__buttons">
-            <button class="header__button">оставить заявку</button>
+            <button data-toggle="modal" class="header__button">оставить заявку</button>
             <button class="header__menu-button menu-button">
               <span class="menu-button__line menu-button__line--white"></span>
               <span class="menu-button__line menu-button__line--white"></span>
@@ -729,7 +729,7 @@
       <div class="container">
         <div class="footer__subscribe subscribe">
           <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
-          <form class="subscribe__form">
+          <form action="send.php" method="POST" class="subscribe__form">
             <input name="email" type="email" class="subscribe__input" placeholder="Email" />
             <button type="submit" class="button subscribe__button">Подписаться</button>
           </form>
@@ -896,6 +896,29 @@
       <!-- /.container -->
       <a href="#" class="to-top" id="toTop"> <img src="img/icons/arrowup.png" alt="arrow" class="to-top__icon" /> </a>
     </footer>
+    <div class="modal" id="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="" class="modal__close"><img src="img/icons/close.svg" alt="" /></a>
+        <h3 class="modal__title">Оставить заявку</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <span class="modal__text">Ваше имя *</span>
+          <input type="text" class="input modal__input" placeholder="Ваше имя" name="name" minlength="2" required />
+          <span class="modal__text">Ваш телефон *</span>
+          <input type="tel" class="input modal__input phone" placeholder="+7 (___) - __ __" name="phone" minlength="17" required />
+          <span class="modal__text">Ваша почта</span>
+          <input type="email" class="input modal__input" placeholder="Электронная почта" name="email" />
+          <div class="modal__bottom">
+            <button class="button modal__button" type="submit">Отправить</button>
+            <span class="modal__info">* Обязательно</span>
+          </div>
+          <!-- /.modal__bottom -->
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/dotdotdot.js"></script>
     <script src="js/swiper-bundle.min.js"></script>

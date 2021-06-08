@@ -7,6 +7,8 @@
       &__item
         &:not(:last-child)
           margin-right: 20px
+    &__button
+      padding: 10px 36px
   .articles
     &__hot
       margin-bottom: 15px
@@ -61,7 +63,7 @@
     &__user
       right: 0
     &__lead
-      max-width: 550px
+      max-width: 530px
     &__paragraph
       max-width: 520px
     &__theme
@@ -1116,7 +1118,40 @@
         &:hover
           &::before
             opacity: 0.5
+
   .main-news
-    &__link
+    &__home, &__button
+      &:hover
+        text-decoration: underline
+  .hero-article
+    &__theme
+      &-link
+        &:hover
+          text-decoration: underline
+    &__user
+      &-link
+        &:hover
+          text-decoration: underline
+    &__tag
+      &-link
+        &:hover
+          &::before
+            opacity: 0.5
+    &__repost
+      &-link
+        &:hover
+          background-color: #3863db
+          opacity: 0.9
+  .comments
+    &__add, &__load-more
+      &:hover
+        &::before
+          opacity: 0.4
+  .to-top
+    &:hover
+      &::before
+        opacity: 0.2
+  .more-articles
+    &__title
       &:hover
         text-decoration: underline

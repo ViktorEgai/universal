@@ -104,3 +104,48 @@ const swiperArticle = new Swiper('.hero-article__swiper', {
     prevEl: '.hero-article__slide-button--prev',
   }, 
 });
+
+  // модальное окно
+  var modalButton = $('[data-toggle=modal]');
+  modalButton.on("click", openModal);
+  function openModal() {
+    var modal = $(".modal");
+    modal.addClass("modal--visible");  
+    $('body').addClass("overflow");
+    };
+
+  var closeModalButton = $(".modal__close");
+  closeModalButton.on("click", closeModal);
+  function closeModal(event) {
+    event.preventDefault();
+    var modal = $(".modal");
+    modal.removeClass("modal--visible"); 
+    $('body').removeClass("overflow"); 
+    };
+
+  $(document).keyup(function(e) {
+    if (e.key === "Escape" || e.keyCode === 27) {
+      e.preventDefault();
+    var modal = $(".modal");
+    modal.removeClass("modal--visible");
+    $('body').removeClass("overflow"); 
+    }    
+  });
+  $('.modal__overlay').on('click', function() {
+    $(".modal").removeClass("modal--visible");
+    $('body').removeClass("overflow"); 
+  });
+	
+// подключению кнопки показать еще
+$(function () {
+    $(".comments__item").slice(0, 4).show();
+    $("#loadMore").on('click', function (e) {
+        e.preventDefault();
+        $(".comments__item:hidden").slice(0, 4).slideDown();
+        if ($(".comments__item:hidden").length == 0) {
+            $("#loadMore").attr('disabled', true);
+        };        
+    });
+});
+
+  
