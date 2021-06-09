@@ -15,7 +15,7 @@ if( $email != "" && $name == "" && $phone == "" ){
     <b>$email</b> хочет подписаться на рассылку новостей
     
     ";
-    header ('Location: thankyou.html');
+    header ('Location: subscribe.html');
 } elseif( $email != "" && $name != "" && $phone != "" ){
     $title = "Новая заявка Universal";
     $body = "
@@ -25,14 +25,14 @@ if( $email != "" && $name == "" && $phone == "" ){
     <b>Электронная почта: </b> $email      
     ";
         // Отображение результата
-    header ('Location: subscribe.html');    
+    header ('Location: request.html');    
 } else{
     $title = "Новый комментрий Universal";
     $body = "
     <h2>Новый комментарий</h2>    
     <b>Сообщение:</b><br>$comment
     ";
-    header ('Location: booking.html');
+    header ('Location: thankyou.html');
 };
 
 // Настройки PHPMailer

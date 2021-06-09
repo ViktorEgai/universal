@@ -136,6 +136,7 @@ const swiperArticle = new Swiper('.hero-article__swiper', {
   //if you click on anything except the modal itself or the "open modal" link, close the modal
   if (!$(event.target).closest(".modal__dialog,.header__button").length) {
     $("body").find(".modal").removeClass("modal--visible");
+    $('body').removeClass("overflow"); 
   }
 });
 // подключению кнопки показать еще
@@ -151,3 +152,42 @@ $(function () {
 });
 
   
+// валидация
+
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          minlength: "Имя должно состоять минимум из 2 букв",
+          required: "Введите свое имя пожалуйста",                   
+        },
+        email: {
+          required: "Введите свою электронную почту",
+          email: "Электронная почта формата имя@домен.com",
+        },
+        phone: {
+          minlength: "Введите свой номер целиком",
+          required: "Введите свой номер телефона пожалуйста",
+          
+        },
+        comment: {
+          minlength: "Требуется ввести минимум 100 символов",
+          required: "Введите свой комментарий",                   
+        },
+      },
+    });
+  });
+
+  // маска для номера телефона
+ 
+   var SPMaskBehavior = function (val) {
+  return val.replace(/\D/g, '').length === 11 ? '+7 (000) 000-0000' : '+7 (000) 000-0009';
+},
+spOptions = {
+  onKeyPress: function(val, e, field, options) {
+      field.mask(SPMaskBehavior.apply({}, arguments), options);
+    }
+};
+
+$('.phone').mask(SPMaskBehavior, spOptions);
